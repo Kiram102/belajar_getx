@@ -169,6 +169,22 @@ class HomeView extends GetView<HomeController> {
           color: const Color(0xFF4299E1),
           onTap: () => Get.toNamed('/form-pendaftaran'),
         ),
+        const SizedBox(height: 16),
+        _buildNavigationCard(
+          title: 'Post Data',
+          subtitle: 'Kelola dan tampilkan data post',
+          icon: Icons.article_outlined,
+          color: const Color(0xFFED8936),
+          onTap: () => Get.toNamed('/post'),
+        ),
+        const SizedBox(height: 16),
+        _buildNavigationCard(
+          title: 'Al-Qur\'an',
+          subtitle: 'Jelajahi surah dan ayat Al-Qur\'an',
+          icon: Icons.book_outlined,
+          color: const Color(0xFF2F855A),
+          onTap: () => Get.toNamed('/al-quran'),
+        ),
       ],
     );
   }
