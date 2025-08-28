@@ -3,7 +3,8 @@ import 'package:get/get.dart';
 import '../controllers/counter_controller.dart';
 
 class CounterView extends GetView<CounterController> {
-  const CounterView({Key? key}) : super(key: key);
+  CounterView({super.key});
+   final CounterController controller = Get.put(CounterController());
 
   @override
   Widget build(BuildContext context) {

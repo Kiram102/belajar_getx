@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class AlquranView extends GetView<AlQuranController> {
-  const AlquranView({Key? key}) : super(key: key);
+  AlquranView({super.key});
+   final AlQuranController controller = Get.put(AlQuranController());
 
   @override
   Widget build(BuildContext context) {
